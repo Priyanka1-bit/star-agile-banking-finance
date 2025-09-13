@@ -13,4 +13,4 @@
     command : sudo systemctl start docker
 
   - name: Deploy Docker Container
-    command: docker run -itd -p 8084:8081 Priyanka1-bit/finance-me:1.0
+    command: docker run -itd -p 8084:8081 priyan263/priyanka-banking-finance:latest
