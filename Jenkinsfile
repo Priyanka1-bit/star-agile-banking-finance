@@ -1,11 +1,11 @@
-def containerName="akash-banking-finance"
+def containerName="priyanka-banking-finance"
 def tag="latest"
-def dockerHubUser="akashkbarik12"
-def gitURL="https://github.com/akashkbarik/star-agile-banking-finance.git"
+def dockerHubUser="priyan263"
+def gitURL="https://github.com/Priyanka1-bit/star-agile-banking-finance.git"
 
 node {
       stage('checkout') {
-	         git changelog: false, credentialsId: 'GitHubCreds', poll: false, url: 'https://github.com/akashkbarik/star-agile-banking-finance.git'
+	         git changelog: false, credentialsId: 'GitHubCreds', poll: false, url: 'https://github.com/Priyanka1-bit/star-agile-banking-finance.git'
 	  }
 	  stage('build') {
 	         sh "mvn clean install"
